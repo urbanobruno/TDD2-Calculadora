@@ -22,6 +22,13 @@ public class CalculadoraTest {
         int resultado = calculadora.subtracao(12,7);
         assertEquals(5, resultado);
     }
+
+    @Test
+    public void testDivisao(){
+        Calculadora calculadora = new Calculadora();
+        int resultado = calculadora.divisao(10, 2);
+        assertEquals(5, resultado);
+    }
     
 }
 
