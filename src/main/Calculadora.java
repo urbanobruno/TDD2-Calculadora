@@ -25,5 +25,11 @@ public class Calculadora {
    public Double seno(Double num){
         return Math.sin(num);
    }
+
+   public double tangente(double angleDegrees){
+    double angleRadians = Math.toRadians(angleDegrees);
+    return Math.tan(angleRadians);
+   }
+
 }
 
