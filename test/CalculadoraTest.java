@@ -2,6 +2,7 @@ package test;
 
 import static org.junit.Assert.assertEquals;
 import org.junit.Test;
+import java.lang.Math;
 
 import main.Calculadora;
 
@@ -34,6 +35,13 @@ public class CalculadoraTest {
         Calculadora calculadora = new Calculadora();
         int resultado = calculadora.multiplicacao(2, 3);
         assertEquals(6, resultado);
+    }
+
+    @Test
+    public void testSeno(){
+        Calculadora calculadora = new Calculadora();
+        Double resultado = calculadora.seno(30);
+        assertEquals(0.5,resultado);
     }
     
 }
