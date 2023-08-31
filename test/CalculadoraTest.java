@@ -30,5 +30,11 @@ public class CalculadoraTest {
         assertEquals(5, resultado);
     }
     
+    public void testMultiplicacao(){
+        Calculadora calculadora = new Calculadora();
+        int resultado = calculadora.multiplicacao(2, 3);
+        assertEquals(6, resultado);
+    }
+    
 }
 
