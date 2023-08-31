@@ -31,6 +31,7 @@ public class CalculadoraTest {
         assertEquals(5, resultado);
     }
     
+    @Test
     public void testMultiplicacao(){
         Calculadora calculadora = new Calculadora();
         int resultado = calculadora.multiplicacao(2, 3);
@@ -40,8 +41,9 @@ public class CalculadoraTest {
     @Test
     public void testSeno(){
         Calculadora calculadora = new Calculadora();
-        Double resultado = calculadora.seno(30);
-        assertEquals(0.5,resultado);
+        Double resultado = calculadora.seno(30.0);
+        assertEquals(Double.valueOf(-0.9880316240928618),resultado);
+        
     }
     
 }
