@@ -45,6 +45,13 @@ public class CalculadoraTest {
         assertEquals(Double.valueOf(-0.9880316240928618),resultado);
         
     }
-    
+
+    @Test
+    public void testTangente() {
+        Calculadora calc = new Calculadora();
+        assertEquals(1.0, calc.tangente(45), 0.001);
+    }
 }
+    
+
 
